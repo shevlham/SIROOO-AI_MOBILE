@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/chat_screen.dart';
+import 'screens/home_screen.dart';
 
 void main() {
   runApp(const SiroooAiApp());
@@ -17,7 +17,7 @@ class SiroooAiApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const ChatScreen(),
+      home: const HomeScreen(),
     );
   }
 }
