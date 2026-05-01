@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+backend/venv/
+backend/.venv/
+*.db
+
+# Flutter/Dart
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+**/android/**/GeneratedPluginRegistrant.java
+**/ios/**/GeneratedPluginRegistrant.h
+**/ios/**/GeneratedPluginRegistrant.m
+**/ios/**/Flutter/Generated.xcconfig
+**/ios/**/Flutter/flutter_export_environment.sh
+**/ios/**/ServiceDefinitions.json
+**/ios/**/GoogleService-Info.plist
+**/android/app/google-services.json
+**/android/local.properties
+**/android/**/flutter_export_environment.sh
+**/android/**/GeneratedPluginRegistrant.java
+**/android/**/project.pb
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*.DS_Store
