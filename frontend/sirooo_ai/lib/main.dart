@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'screens/home_screen.dart';
+import 'screens/splash_screen.dart';
+import 'utils/constants.dart';
 
 void main() {
   runApp(const SiroooAiApp());
@@ -14,10 +15,22 @@ class SiroooAiApp extends StatelessWidget {
       title: 'SIROOO AI',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: AppConstants.primaryColor,
+          primary: AppConstants.primaryColor,
+          secondary: AppConstants.accentColor,
+        ),
+        scaffoldBackgroundColor: AppConstants.backgroundColor,
+        fontFamily: 'Inter', // Assuming Inter or similar is used
+        cardTheme: CardThemeData(
+          elevation: 0,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(24),
+          ),
+        ),
       ),
-      home: const HomeScreen(),
+      home: const SplashScreen(),
     );
   }
 }
